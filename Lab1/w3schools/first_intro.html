@@ -1,0 +1,129 @@
+<!-- HTML is not case sensitive -->
+<!DOCTYPE html>
+<!-- html or htm is also acceptable -->
+<!-- html is the root element of an html page -->
+<html lang="en-US"> <!-- country code -->
+  <!-- Contains the meta information about the website -->
+  <head>
+    <title>W3School Tutorial</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS: Cascading Style Sheets 
+    Cascading -> a style applied to a parent element will also apply to all children elements within the parent
+
+    implementation of css: 3 ways
+    1. inline, 2. internal, 3. external  -->
+    <style>
+      /* hsl: for getting the grey color -> set the hue and saturation to zero, and play around with the lightness */
+      /* hsla: alpha channel -> shows the opacity 0 full transparent -> can't see the color, and opacity 1 -> full color, no transparent */
+      body {
+        background-color: hsla(0, 0%, 60%, 0.799);
+        margin: 0;
+        background-image: url('challenge.png');
+        /* if you want the background image to stretch to fit the entire element, you can set to this: */
+        background-size: 100% 100%;
+        /* background-size: cover; */
+        background-attachment: fixed;
+      }
+
+
+    </style>
+  </head>
+  <body id="top">
+    <!-- The HTML element is everything from the start tag to the end tag -->
+    <!--(void elements) Empty elements don't have any ending tag -->
+    <!-- ctrl + u : shows the page source(codes)-->
+    <h1>My first heading.</h1>
+    <p title="I'm a tooltip.">My first paragraph.</p>
+    <hr> <!-- Defines a change in an html page -->
+    <p title='Tamana "Alizada" Student'>Second Paragraph</p>
+    <!-- HTML attributes: provide additional information about HTML elements -->
+    <!-- attributes always come in name/value pais: name="value" -->
+    <!-- There are two ways to specify the URL in the src attribute:
+     1. Absolute URL:links to an external image that is hosted on another website. https:
+     2. Relative URL: Links to an image that is hosted within the website.
+    -->
+    <p>
+      My Bonnie lies over the ocean.<br>
+      My Bonnie lies over the sea.<br>
+      My Bonnie lies over the ocean.<br>
+      Oh, bring back my Bonnie to me.<br>
+    </p>
+    <!-- Considers both line breaks and spaces -->
+    <pre>
+      My Bonnie lies <mark>over</mark> the ocean.
+      <!-- ins: inserted text -->
+      <!-- <i></i>: is often used to indicate a techincal term, a phrase from another language, a though, a ship name, etc -->
+      My Bonnie <del>lies</del> <ins>over</ins> the sea.
+
+      My <small>Bonnie</small> lies <sup>over</sup> the ocean.
+
+      Oh, bring back my <sub>Bonnie</sub> to me.
+    </pre>
+    
+    <h2 style="background-color: pink;">This is a heading.</h2>
+    <p style="background-color: blue; text-align: center;">This is a paragraph.</p> <!-- text-align: horizontal text alignment-->
+    <!-- The HTML <blockquote> element defines a section that is quoted from another source. -->
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <!-- The HTML <q> tag defines a short quotation -->
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was foundedin 1948.</p>
+
+    <address>
+      Written by Tamana Alizada.<br>
+      Visit me at:<br>
+      Example.com<br>
+      Box 564, Disneylan<br>
+      USA
+    </address>
+    <!-- defines the title of a creative work -->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <bdo dir="rtl">Text 123 من</bdo>
+    <p style="background-color: tomato;" dir="rtl">من میخواهم این را ببینم</p>
+    <!-- rgb (rgba), hsl (hsla)-->
+
+    <!-- Shades of Gray: using equal values for all three parameters -->
+
+    <!-- HSL: hue, saturation, lightness
+     HSLA: hue, saturation, lightness, opacity -->
+
+    <!-- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+    Saturation (shows the intensity of the color) is a percentage value. 0% means a shade of gray, and 100% is the full color.
+    Lightness is also a percentage value. 0% is black, and 100% is white. -->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_parent" title="go to the w3schools html section">w3schools</a>
+    <!-- relative links : are links without https: or something like this -->
+
+
+    <a href="#top">Back to the top</a>
+
+    <p><img style="float: right;" src="challenge.png" alt="css challenge" width="100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt illum molestiae reiciendis. In id dignissimos et totam debitis voluptatem consectetur quisquam, doloribus, fuga ipsum esse eveniet voluptas cumque architecto tempore?</p>
+
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+    
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg"> 
+      <source media="(min-width: 465px)" srcset="img_car.jpg">
+      <img src="img_girl.jpg" alt="">
+    </picture>
+
+    <!-- browser will decide which one to choose according to its support -->
+    <picture>
+      <source srcset="img_avatar.png">
+      <source srcset="img_girl.jpg">
+      <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+    </picture>
+
+    <!-- for creating favicon: https://www.favicon.cc/? -->
+    
+  </body>
+</html>
