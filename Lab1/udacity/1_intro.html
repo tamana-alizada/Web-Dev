@@ -1,0 +1,62 @@
+<!-- IDE: integrated development enviorment -->
+<!-- color display: https://www.webfx.com/web-design/hex-to-rgb/ -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Structure</title>
+    <style>
+      /* css ruleset or css statement*/
+      /* selector {
+        declaration block
+      } 
+      types of selectors:
+      tag selector: h1 { }
+      class attribute selector: .book-class { }
+      id attribute selector: #book-id { }
+      */
+      /* CSS Units: 
+      Absolute -> px, mm, in, cm
+      Relative -> %, em, vw, vh
+       */
+      body {
+        text-align: center;
+      }
+      #para-1 {
+        color: red;
+      }
+      .para-1 {
+        color: rgb(128, 0, 128);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ctl + f: in mdn, for finding the elements -->
+    <h1>This is a heading.</h1>
+    <p>This is a paragraph.</p>
+    <span>This is a span.</span>
+    <img src="image.jpg" alt="a picture">
+    <div>
+      <h1>Article Title</h1>
+      <p>Paragraph of text.</p>
+    </div>
+
+    <a href="https://www.google.com">Google</a>
+
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+    </ul>
+
+    <!-- alt: alternative description -> it is good for screen readers -->
+    <!-- void elements: have no content, that is why they don't have closing tags -->
+    <img src="http://somewebsite.com/image.jpg" alt="short description">
+    <!-- local/internal files vs external files -->
+
+    <p class="para-1">This is a paragraph.</p>
+    <p id="para-1">This is another paragraph.</p>
+  </body>
+
+</html>
