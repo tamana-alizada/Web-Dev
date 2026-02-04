@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tamana Alizada">
+  <meta name="description" content="This is a cloned facebook login page. It is ust a project in our Web Development class.">
+  <title>Facebook - log in or sign up</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="facebook-icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="global-container">
+    <header>
+      <img id="fb-logo" src="facebook-logo.svg" alt="Facebook Logo">
+      <p id="fb-header-content">Connect with friends and the world around you on Facebook.</p>
+    </header>
+
+    
+    <div class="main-footer-container">
+      <main>
+        <!-- color being used: #0866ff for the login button
+        color being used: #42b72a for the create button -->
+        <section aria-label="login form">
+          <form action="#" method="post">
+            <div>
+              <label for="emailOrPhone">Email or phone number</label>
+              <input autofocus="emailOrPhone" type="text" name="email_or_phone" placeholder="Email or phone number" autocomplete="username" required>
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+            </div>
+            
+            <button id="login-btn" type="submit">Log In</button>
+          </form>
+
+          <p class="forgot-pass-p">
+            <a id="forgot-pass" href="https://www.facebook.com/login/identify/">Forgot password?</a>
+          </p>
+          <hr>
+          <p>
+            <a id="new-account-btn" href="#" role="button">Create new account</a>
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>
+          <a id="create-page" href="#">Create a Page</a> for a celebrity, brand or business.
+        </p>
+      </footer>
+    </div>
+  </div>
+  
+</body>
+</html>

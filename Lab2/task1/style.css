@@ -1,0 +1,166 @@
+/* Variables */
+:root {
+  --card-width: min(310px, 92vw);
+}
+
+/* universal settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.global-container {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 76%;
+  width: 100%;
+  text-align: center;
+}
+/* header styling */
+#fb-logo {
+  height: 85px;
+  margin-top: 12px;
+}
+
+#fb-header-content {
+  margin-top: -6px;
+  width: var(--card-width);
+  font-size: 20px;
+}
+
+/* main section styling */
+section {
+  background-color: white;
+  box-shadow: 0 2px 4px #0000001a,0 8px 16px #0000001a;
+  border-radius: 6px;
+  padding: 10px 13px;
+  margin: 30px;
+  margin-bottom: 25px;
+}
+
+input, #login-btn, #new-account-btn {
+  border-radius: 5px;
+  width: var(--card-width);
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  padding: 12px 14px;
+  caret-color: #0866ff;
+}
+input::placeholder {
+  color: #8a8a8a;
+}
+input:focus {
+  border: 1px solid #0866ff;
+  outline: none;
+}
+/* login button */
+#login-btn {
+  font-weight: bold;
+  background-color: #0866ff;
+  color: white;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* Forgot password */
+.forgot-pass-p {
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+hr {
+  border: none;
+  height: .7px;
+  background-color: #dddfe2;
+}
+
+#forgot-pass {
+  text-decoration: none;
+  font-size: 12px;
+  color: #0866ff;
+}
+
+#forgot-pass:hover {
+  text-decoration: underline;
+}
+
+/* create new account button */
+#new-account-btn {
+  width: fit-content;
+  background-color: #42b72a;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: auto;
+  padding: 13px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer p {
+  font-size: 12px;
+}
+
+footer p #create-page {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+footer p #create-page:hover {
+  text-decoration: underline;
+}
+
+
+@media(min-width: 700px) {
+  .global-container {
+    flex-direction: row;
+    /* add some style */
+    gap: 80px;
+    gap: 80px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    width: 380px;
+    margin-top: -100px;
+    margin-left: 30px;
+  }
+  #fb-logo {
+    margin-left: -24px;
+  }
+  #fb-header-content {
+    /* add some style */
+    font-size: 22px;
+    line-height: 23px;
+    width: 100%;
+  }
+  .main-footer-container {
+    text-align: center;
+  }
+}
